@@ -1,4 +1,5 @@
 import images from '../assets/images';
+import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg'
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <section className="mb-16">
         <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
           <img 
-            src={images.hero.ballisodareAerial} 
+            src={ballisodareAerial} 
             alt="Aerial view of Ballisodare village" 
             className="absolute inset-0 w-full h-full object-cover"
           />
