@@ -2,6 +2,7 @@
   "name": "ballisodare-community-council",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dartths.github.io/BallisodareCommunityCouncilWebsite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
