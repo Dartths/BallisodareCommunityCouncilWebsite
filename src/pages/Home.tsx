@@ -5,9 +5,16 @@ const Home = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
       <section className="mb-16">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-title font-bold mb-2 text-primary">Welcome to Ballisodare</h1>
-          <p className="text-xl text-dark/80 font-title italic">Baile Easa Dara - 'town of the waterfall of the oak'</p>
+        <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
+          <img 
+            src={images.hero.ballisodareAerial} 
+            alt="Aerial view of Ballisodare village" 
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white">
+            <h1 className="text-5xl font-title font-bold mb-4 text-white">Welcome to Ballisodare</h1>
+            <p className="text-2xl font-title italic text-white/90">Baile Easa Dara - 'town of the waterfall of the oak'</p>
+          </div>
         </div>
         <div className="prose max-w-none">
           <p className="text-lg mb-6">
