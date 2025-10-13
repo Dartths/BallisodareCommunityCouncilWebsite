@@ -19,11 +19,17 @@ const Navbar = () => {
               <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 About
               </Link>
-              <Link to="/facilities" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
-                Facilities
+              <Link to="/clubs-and-organisations" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+                Clubs and Organisations
+              </Link>
+              <Link to="/things-to-do" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+                Things to Do
+              </Link>
+              <Link to="/latest-news" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+                Latest News
               </Link>
               <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
-                Contact
+                Contact Us
               </Link>
             </div>
           </div>
