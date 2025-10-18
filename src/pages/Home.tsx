@@ -1,3 +1,4 @@
+import ReadMoreButton from '../components/ReadMoreButton';
 import images from '../assets/images';
 import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg'
 
@@ -29,9 +30,7 @@ const Home = () => {
             not far from the Sally Gardens immortalised in the poem of the same name.
           </p>
           <div className="text-center">
-            <a href="/heritage-and-history" className="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors font-title">
-              Read More
-            </a>
+            <ReadMoreButton href="/heritage-and-history" />
           </div>
         </div>
       </section>
@@ -44,9 +43,7 @@ const Home = () => {
           Supporting activities that improve the social, economic and environmental well being of Ballisodare.
         </p>
         <div className="text-center">
-          <a href="/about" className="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors font-title">
-            Read More
-          </a>
+          <ReadMoreButton href="/about" />
         </div>
       </section>
 
@@ -73,9 +70,7 @@ const Home = () => {
               rugby and many other activities and are complimented by spacious, clean, male and female changing and hot shower areas.
             </p>
             <div>
-              <a href="/facilities" className="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors font-title">
-                Read More
-              </a>
+              <ReadMoreButton href="/facilities" />
             </div>
           </div>
         </div>
@@ -88,9 +83,7 @@ const Home = () => {
           If you wish to speak to us about facility bookings you can contact David Dillon on 086 285 1099 or use the form to request a booking.
         </p>
         <div className="text-center">
-          <a href="/contact" className="inline-block bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors font-title">
-            Contact Us
-          </a>
+          <ReadMoreButton href="/contact" text="Contact Us" />
         </div>
       </section>
 
