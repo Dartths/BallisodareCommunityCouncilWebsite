@@ -1,22 +1,17 @@
-import ReadMoreButton from '../components/ReadMoreButton';
+import ReadMoreButton from '../components/buttons/ReadMoreButton';
 import images from '../assets/images';
-import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg'
+import Hero from '../components/banners/Hero';
+import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
+import LatestNewsSection from '../components/LatestNewsSection';
 
 const Home = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative h-[400px]">
-        <img 
-          src={ballisodareAerial} 
-          alt="Aerial view of Ballisodare village" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white">
-          <h1 className="text-5xl font-title font-bold mb-4 text-white">Welcome to Ballisodare</h1>
-          <p className="text-2xl font-title italic text-white/90">Baile Easa Dara - 'town of the waterfall of the oak'</p>
-        </div>
-      </section>
+      <Hero 
+        title="Welcome to Ballisodare"
+        subtitle="Baile Easa Dara - 'town of the waterfall of the oak'"
+        image={ballisodareAerial}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose max-w-none">
@@ -36,7 +31,7 @@ const Home = () => {
         </div>
 
         {/* Community Council Section */}
-        <section className="my-16 bg-gray-50 p-8 rounded-lg">
+        <section className="my-16 bg-gray-50 rounded-lg">
           <h2 className="text-3xl font-bold mb-6 font-title text-primary">About Ballisodare Community Council</h2>
           <p className="text-lg mb-6 font-body text-gray-700">
             Ballisodare Community Council is a community development group for locals by locals.
@@ -50,7 +45,7 @@ const Home = () => {
         {/* Facilities Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6 font-title text-primary">Community Centre Facilities</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
               <img
                 src={images.facilities.communityCentre}
@@ -77,7 +72,7 @@ const Home = () => {
         </section>
 
         {/* Booking Section */}
-        <section className="mb-16 bg-gray-50 p-8 rounded-lg">
+        <section className="mb-16 bg-gray-50 rounded-lg">
           <h2 className="text-3xl font-bold mb-6 font-title text-primary">Book our Facilities</h2>
           <p className="text-lg mb-6 font-body text-gray-700">
             If you wish to speak to us about facility bookings you can contact David Dillon on 086 285 1099 or use the form to request a booking.
@@ -87,33 +82,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Latest News Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 font-title text-primary">Latest News</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Men's Shed</h3>
-                <p className="text-gray-700 mb-4 font-body">Ballisodare Men's shed is open again and welcomes new members...</p>
-                <a href="/news/mens-shed" className="text-primary hover:text-secondary transition-colors font-title">Read more</a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Tidy Towns Clean Up</h3>
-                <p className="text-gray-600 mb-4">From time to time Ballisodare Tidy Towns will organise a village cleanup...</p>
-                <a href="/news/tidy-towns" className="text-blue-600 hover:text-blue-800">Read more</a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Bulk Item Disposal</h3>
-                <p className="text-gray-600 mb-4">Information about bulk item disposal at Young's Quarry...</p>
-                <a href="/news/bulk-disposal" className="text-blue-600 hover:text-blue-800">Read more</a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <LatestNewsSection />
       </div>
     </div>
   );
