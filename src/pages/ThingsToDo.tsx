@@ -1,4 +1,5 @@
 import images from '../assets/images';
+import { activities } from '../config/routes';
 
 const ThingsToDo = () => {
   return (
@@ -31,28 +32,28 @@ const ThingsToDo = () => {
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Men's Shed</h3>
               <p className="text-gray-700 mb-4 font-body">Our shed is a community-based organisation that is open to all , where the primary activity is the provision of a safe, friendly, and inclusive environment, where members are able to gather and /or work together on meaningful projects in the company of others, where the primary objective is to advance the health and well being of the participants.</p>
-              <a href="/news/mens-shed" className="text-primary hover:text-secondary transition-colors font-title">Read more</a>
+              <a href={activities.mensShed} className="text-primary hover:text-secondary transition-colors font-title">Read more</a>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Union Woods</h3>
               <p className="text-gray-600 mb-4">The walk through Union Wood is approximately 5 kilometers in one direction and joins Ballisodare and Collooney via union Wood. It is a beautiful Woodland walk some of the walk...</p>
-              <a href="/news/tidy-towns" className="text-blue-600 hover:text-blue-800">Read more</a>
+              <a href={activities.tidyTowns} className="text-blue-600 hover:text-blue-800">Read more</a>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Knoxpark</h3>
-              <p className="text-gray-600 mb-4">Knoxpark wild-park was officially opened in 2001. A sculpture trail was designed by the artists, Martina Coyle, Hilary Gilligan and Pauline O’Connell with input from the local community, naturalists and archaeologists. The sculpture trail forms a walkway incorporating a ‘Pillow Stone’ inspired by discoveries on the significant archaeological site here. Stone benches are placed to invite the visitor to relax and enjoy the views.</p>
-              <a href="/news/bulk-disposal" className="text-blue-600 hover:text-blue-800">Read more</a>
+              <p className="text-gray-600 mb-4">Knoxpark wild-park was officially opened in 2001. A sculpture trail was designed by the artists, Martina Coyle, Hilary Gilligan and Pauline O'Connell with input from the local community, naturalists and archaeologists. The sculpture trail forms a walkway incorporating a 'Pillow Stone' inspired by discoveries on the significant archaeological site here. Stone benches are placed to invite the visitor to relax and enjoy the views.</p>
+              <a href={activities.knoxpark} className="text-blue-600 hover:text-blue-800">Read more</a>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">The Falls</h3>
               <p className="text-gray-600 mb-4">In Ballisodare Village the river forms a series of ledges, pools, glides and mini falls and continues to the mouth of Ballisodare Bay where the river empties over...</p>
-              <a href="/news/bulk-disposal" className="text-blue-600 hover:text-blue-800">Read more</a>
+              <a href={activities.falls} className="text-blue-600 hover:text-blue-800">Read more</a>
             </div>
           </div>
         </div>

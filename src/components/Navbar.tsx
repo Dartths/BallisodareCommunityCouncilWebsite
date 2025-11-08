@@ -3,16 +3,17 @@ import images from '../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import NavbarSubmenu from './NavbarSubmenu';
+import { home, about, clubs, activities, news, contact } from '../config/routes';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAboutMenuOpen, setAboutMenuOpen] = useState(false);
 
   const aboutSubmenuItems = [
-    { label: 'About Us', to: '/about' },
-    { label: 'Our History', to: '/about/history' },
-    { label: 'Community Council', to: '/about/committee' },
-    { label: 'Projects', to: '/about/projects' },
+    { label: 'About Us', to: about.index },
+    { label: 'Our History', to: about.history },
+    { label: 'Community Council', to: about.committee },
+    { label: 'Projects', to: about.projects },
   ];
 
   return (
@@ -26,20 +27,20 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+              <Link to={home} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Home
               </Link>
               <NavbarSubmenu name="About" items={aboutSubmenuItems} />
-              <Link to="/clubs-and-organisations" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+              <Link to={clubs} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Clubs and Organisations
               </Link>
-              <Link to="/things-to-do" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+              <Link to={activities.index} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Things to Do
               </Link>
-              <Link to="/latest-news" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+              <Link to={news.index} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Latest News
               </Link>
-              <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+              <Link to={contact} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Contact Us
               </Link>
             </div>
@@ -137,28 +138,28 @@ const Navbar = () => {
               </Transition>
             </div>
             <Link
-              to="/clubs-and-organisations"
+              to={clubs}
               onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Clubs and Organisations
             </Link>
             <Link
-              to="/things-to-do"
+              to={activities.index}
               onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Things to Do
             </Link>
             <Link
-              to="/latest-news"
+              to={news.index}
               onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Latest News
             </Link>
             <Link
-              to="/contact"
+              to={contact}
               onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >

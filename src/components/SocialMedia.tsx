@@ -7,6 +7,8 @@ import { socialUrls } from '../config/socials';
 
 const SocialMedia: React.FC = () => {
   return (
+    
+        <section className="mb-16">
     <div className="bg-gray-100 p-4 rounded-lg shadow-md">
   <h2 className="text-xl font-semibold mb-4 font-title text-secondary">Follow Us</h2>
       <div className="flex justify-around">
@@ -44,6 +46,7 @@ const SocialMedia: React.FC = () => {
         </a>
       </div>
     </div>
+    </section>
   );
 };
 

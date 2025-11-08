@@ -4,11 +4,12 @@ import Hero from '../components/banners/Hero';
 import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
+import { about, facilities, contact, heritage, activities } from '../config/routes';
 
 const Home = () => {
   return (
     <div>
-      <Hero 
+      <Hero
         title="Welcome to Ballisodare"
         subtitle="Baile Easa Dara - 'town of the waterfall of the oak'"
         image={ballisodareAerial}
@@ -27,7 +28,7 @@ const Home = () => {
             not far from the Sally Gardens immortalised in the poem of the same name.
           </p>
           <div className="text-center">
-            <ReadMoreButton href="/heritage-and-history" />
+            <ReadMoreButton href={heritage.index} />
           </div>
         </div>
 
@@ -39,7 +40,7 @@ const Home = () => {
             Supporting activities that improve the social, economic and environmental well being of Ballisodare.
           </p>
           <div className="text-center">
-            <ReadMoreButton href="/about" />
+            <ReadMoreButton href={about.index} />
           </div>
         </section>
 
@@ -66,7 +67,7 @@ const Home = () => {
                 rugby and many other activities and are complimented by spacious, clean, male and female changing and hot shower areas.
               </p>
               <div>
-                <ReadMoreButton href="/facilities" />
+                <ReadMoreButton href={facilities.index} />
               </div>
             </div>
           </div>
@@ -79,12 +80,41 @@ const Home = () => {
             If you wish to speak to us about facility bookings you can contact David Dillon on 086 285 1099 or use the form to request a booking.
           </p>
           <div className="text-center">
-            <ReadMoreButton href="/contact" text="Contact Us" />
+            <ReadMoreButton href={contact} text="Contact Us" />
           </div>
         </section>
 
-        <LatestNewsSection />
-        <SocialMedia />
+        <section className="mb-16">
+          <LatestNewsSection />
+        </section>
+
+        <section className="mb-16">
+          <SocialMedia />
+        </section>
+
+        {/* About Ballisodare */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 font-title text-primary">More About Ballisodare</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div >
+              <h3 className="text-2xl font-bold mb-6 font-title text-primary">Ballisodare Heritage & History</h3>
+              <p className="text-lg mb-6 font-body text-gray-700">
+                The town is situated at the mouth of the Ballisodare River  and is one of the most picturesque towns in the Northwest on the Wild  Atlantic Way. Few spots in the county have as varied and interesting a history as Ballisodare with evidence that it was a major gathering place for surrounding districts as early as the second century          </p>
+              <div className="text-center">
+                <ReadMoreButton href={about.history} text="Read More" />
+              </div>
+            </div>
+            <div >
+              <h3 className="text-2xl font-bold mb-6 font-title text-primary">Things to Do in Ballisodare</h3>
+              <p className="text-lg mb-6 font-body text-gray-700">
+                There are no shortage of things to do in Ballisodare with outdoor lovers particularly well catered for. Many adventures awaits hikers, walkers, cyclists and wildlife lovers. If history is your thing, Ballisodare has it in spades with early Viking settlements (and burial sites) St Fechins Church and graveyard and salt pans which can trace their history back to the 1600s
+              </p>
+              <div className="text-center">
+                <ReadMoreButton href={activities.index} text="Read More" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

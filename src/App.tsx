@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import ClubsAndOrganisations from './pages/ClubsAndOrganisations';
 import ThingsToDo from './pages/ThingsToDo';
 import LatestNews from './pages/LatestNews';
+import { home, about, facilities, contact, clubs, activities, news } from './config/routes';
 
 function App() {
   return (
@@ -16,13 +17,13 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/facilities" element={<Facilities />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/clubs-and-organisations" element={<ClubsAndOrganisations />} />
-            <Route path="/things-to-do" element={<ThingsToDo />} />
-            <Route path="/latest-news" element={<LatestNews />} />
+            <Route path={home} element={<Home />} />
+            <Route path={about.index} element={<About />} />
+            <Route path={facilities.index} element={<Facilities />} />
+            <Route path={contact} element={<Contact />} />
+            <Route path={clubs} element={<ClubsAndOrganisations />} />
+            <Route path={activities.index} element={<ThingsToDo />} />
+            <Route path={news.index} element={<LatestNews />} />
           </Routes>
         </main>
         <Footer />
