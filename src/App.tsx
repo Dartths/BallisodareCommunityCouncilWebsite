@@ -2,13 +2,14 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Facilities from './pages/Facilities';
 import Contact from './pages/Contact';
 import ClubsAndOrganisations from './pages/ClubsAndOrganisations';
 import ThingsToDo from './pages/ThingsToDo';
 import LatestNews from './pages/LatestNews';
-import { home, about, facilities, contact, clubs, activities, news } from './config/routes';
+import { home, about, facilities, contact, clubs, activities, news, gallery } from './config/routes';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path={clubs} element={<ClubsAndOrganisations />} />
             <Route path={activities.index} element={<ThingsToDo />} />
             <Route path={news.index} element={<LatestNews />} />
+            <Route path={gallery} element={<Gallery />} />
           </Routes>
         </main>
         <Footer />
