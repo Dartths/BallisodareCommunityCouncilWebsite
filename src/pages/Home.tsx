@@ -8,7 +8,7 @@ import SocialMedia from '../components/SocialMedia';
 const Home = () => {
   return (
     <div>
-      <Hero 
+      <Hero
         title="Welcome to Ballisodare"
         subtitle="Baile Easa Dara - 'town of the waterfall of the oak'"
         image={ballisodareAerial}
@@ -85,6 +85,32 @@ const Home = () => {
 
         <LatestNewsSection />
         <SocialMedia />
+
+
+
+        {/* About Ballisodare */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 font-title text-primary">More About Ballisodare</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div >
+              <h3 className="text-2xl font-bold mb-6 font-title text-primary">Ballisodare Heritage & History</h3>
+              <p className="text-lg mb-6 font-body text-gray-700">
+                The town is situated at the mouth of the Ballisodare River  and is one of the most picturesque towns in the Northwest on the Wild  Atlantic Way. Few spots in the county have as varied and interesting a history as Ballisodare with evidence that it was a major gathering place for surrounding districts as early as the second century          </p>
+              <div className="text-center">
+                <ReadMoreButton href="/about/history" text="Read More" />
+              </div>
+            </div>
+            <div >
+              <h3 className="text-2xl font-bold mb-6 font-title text-primary">Things to Do in Ballisodare</h3>
+              <p className="text-lg mb-6 font-body text-gray-700">
+                There are no shortage of things to do in Ballisodare with outdoor lovers particularly well catered for. Many adventures awaits hikers, walkers, cyclists and wildlife lovers. If history is your thing, Ballisodare has it in spades with early Viking settlements (and burial sites) St Fechins Church and graveyard and salt pans which can trace their history back to the 1600s
+              </p>
+              <div className="text-center">
+                <ReadMoreButton href="/things-to-do" text="Read More" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
