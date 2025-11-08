@@ -3,6 +3,7 @@ import images from '../assets/images';
 import Hero from '../components/banners/Hero';
 import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
+import SocialMedia from '../components/SocialMedia';
 
 const Home = () => {
   return (
@@ -83,6 +84,7 @@ const Home = () => {
         </section>
 
         <LatestNewsSection />
+        <SocialMedia />
       </div>
     </div>
   );
