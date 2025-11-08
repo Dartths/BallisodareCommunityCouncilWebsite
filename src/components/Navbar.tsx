@@ -104,6 +104,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/"
+              onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Home
@@ -126,6 +127,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
+                      onClick={() => setIsOpen(false)}
                       className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
                     >
                       {item.label}
@@ -136,24 +138,28 @@ const Navbar = () => {
             </div>
             <Link
               to="/clubs-and-organisations"
+              onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Clubs and Organisations
             </Link>
             <Link
               to="/things-to-do"
+              onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Things to Do
             </Link>
             <Link
               to="/latest-news"
+              onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Latest News
             </Link>
             <Link
               to="/contact"
+              onClick={() => setIsOpen(false)}
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
             >
               Contact Us
