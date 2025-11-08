@@ -5,6 +5,7 @@ import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
 import { about, facilities, contact, heritage, activities } from '../config/routes';
+import GalleryPreview from '../components/gallery/GalleryPreview';
 
 const Home = () => {
   return (
@@ -84,13 +85,10 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="mb-16">
-          <LatestNewsSection />
-        </section>
+        <LatestNewsSection />
+        <SocialMedia />
 
-        <section className="mb-16">
-          <SocialMedia />
-        </section>
+
 
         {/* About Ballisodare */}
         <section className="mb-16">
@@ -115,7 +113,11 @@ const Home = () => {
             </div>
           </div>
         </section>
+
       </div>
+      
+      {/* Gallery Preview Section */}
+      <GalleryPreview />
     </div>
   );
 };
