@@ -14,7 +14,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, description, link }) => {
         <h3 className="text-xl font-semibold mb-3 font-title text-secondary">{title}</h3>
         <p className="text-gray-700 mb-4 font-body">{description}</p>
            <div className="text-center">
-            <ReadMoreButton href="/mens-shed" text="Read More" />
+            <ReadMoreButton href={link} text="Read More" />
           </div>
       </div>
     </div>
