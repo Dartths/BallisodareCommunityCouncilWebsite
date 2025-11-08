@@ -29,7 +29,8 @@ export const routes = {
     archive: '/latest-news/archive'
   },
   contact: '/contact',
-  clubs: '/clubs-and-organisations'
+  clubs: '/clubs-and-organisations',
+  gallery: '/gallery'
 } as const;
 
 // Helper function to ensure type safety when accessing routes
@@ -48,5 +49,6 @@ export const {
   activities,
   news,
   contact,
-  clubs
+  clubs,
+  gallery
 } = routes;
