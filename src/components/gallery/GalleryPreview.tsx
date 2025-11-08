@@ -1,6 +1,6 @@
 import ImageCollage from './ImageCollage';
 import { gallery } from '../../config/routes';
-import images from '../../assets/images';
+import { galleryConfig } from '../../config/gallery';
 
 const GalleryPreview = () => {
   return (
@@ -9,21 +9,10 @@ const GalleryPreview = () => {
         <h2 className="text-3xl font-bold font-title text-primary">Gallery</h2>
       </div>
       <ImageCollage
-        rows={[
-          {
-            images: [
-              { src: images.activities.ballisodareFalls, alt: "Ballisodare Falls" },
-              { src: images.facilities.communityCentre, alt: "Community Centre" }
-            ]
-          },
-          {
-            images: [
-              { src: images.hero.ballisodareAerial, alt: "Aerial View of Ballisodare" }
-            ]
-          }
-        ]}
+        rows={galleryConfig.preview.rows}
         isPreview={true}
         galleryPath={gallery}
+        baseRowHeight={galleryConfig.preview.baseRowHeight}
       />
     </div>
   );
