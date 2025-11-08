@@ -5,7 +5,8 @@ import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
 import { about, facilities, contact, heritage, activities } from '../config/routes';
-import GalleryPreview from '../components/gallery/GalleryPreview';
+import Gallery from '../components/gallery/GalleryPreview';
+import { galleryPreviewConfig } from '../config/gallerypreview';
 
 const Home = () => {
   return (
@@ -117,7 +118,7 @@ const Home = () => {
       </div>
       
       {/* Gallery Preview Section */}
-      <GalleryPreview />
+      <Gallery rows={galleryPreviewConfig.preview.rows} />
     </div>
   );
 };

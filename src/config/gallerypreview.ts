@@ -12,7 +12,7 @@ export interface PreviewRow {
   images: PreviewImage[];
 }
 
-export const galleryPreviewConfig: PreviewRow[] = [
+export const galleryRowPreviewConfig: PreviewRow[] = [
   {
     images: [
       {
@@ -36,9 +36,9 @@ export const galleryPreviewConfig: PreviewRow[] = [
 ];
 
 // Future configuration options can be added here
-export const galleryConfig = {
+export const galleryPreviewConfig = {
   preview: {
-    rows: galleryPreviewConfig,
+    rows: galleryRowPreviewConfig,
     baseRowHeight: '40vh'  // can be adjusted as needed
   }
 } as const;
