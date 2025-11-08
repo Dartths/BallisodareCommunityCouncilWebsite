@@ -84,10 +84,13 @@ const Home = () => {
           </div>
         </section>
 
-        <LatestNewsSection />
-        <SocialMedia />
+        <section className="mb-16">
+          <LatestNewsSection />
+        </section>
 
-
+        <section className="mb-16">
+          <SocialMedia />
+        </section>
 
         {/* About Ballisodare */}
         <section className="mb-16">
