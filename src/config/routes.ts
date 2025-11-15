@@ -4,7 +4,6 @@ export const routes = {
   about: {
     index: '/about',
     history: '/about/history',
-    committee: '/about/committee',
     projects: '/about/projects'
   },
   facilities: {

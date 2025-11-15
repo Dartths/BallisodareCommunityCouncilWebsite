@@ -4,9 +4,10 @@ import Hero from '../components/banners/Hero';
 import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
-import { about, facilities, contact, heritage, activities } from '../config/routes';
-import GalleryPreview from '../components/gallery/GalleryPreview';
-import { homeGalleryPreviewConfig } from '../config/homeGalleryPreviewConfig';
+import { about, facilities, heritage, activities } from '../config/routes';
+import Gallery from '../components/gallery/GalleryPreview';
+import { galleryPreviewConfig } from '../config/gallerypreview';
+import BookingCTA from '../components/sections/BookingSection';
 
 const Home = () => {
   return (
@@ -75,16 +76,8 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Booking Section */}
-        <section className="mb-16 bg-gray-50 rounded-lg">
-          <h2 className="text-3xl font-bold mb-6 font-title text-primary">Book our Facilities</h2>
-          <p className="text-lg mb-6 font-body text-gray-700">
-            If you wish to speak to us about facility bookings you can contact David Dillon on 086 285 1099 or use the form to request a booking.
-          </p>
-          <div className="text-center">
-            <ReadMoreButton href={contact} text="Contact Us" />
-          </div>
-        </section>
+        {/* Booking CTA */}
+        <BookingCTA />
 
         <LatestNewsSection />
         <SocialMedia />
