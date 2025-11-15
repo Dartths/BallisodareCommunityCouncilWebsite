@@ -8,7 +8,6 @@ import { about, facilities, heritage, activities } from '../config/routes';
 import Gallery from '../components/gallery/GalleryPreview';
 import { homeGalleryPreviewConfig } from '../config/homeGalleryPreviewConfig';
 import BookingCTA from '../components/sections/BookingSection';
-import HeritageAndHistory from './HeritageAndHistory';
 
 const Home = () => {
   return (
