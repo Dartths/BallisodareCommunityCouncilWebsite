@@ -6,7 +6,7 @@ import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
 import { about, facilities, heritage, activities } from '../config/routes';
 import Gallery from '../components/gallery/GalleryPreview';
-import { galleryPreviewConfig } from '../config/gallerypreview';
+import { homeGalleryPreviewConfig } from '../config/homeGalleryPreviewConfig';
 import BookingCTA from '../components/sections/BookingSection';
 
 const Home = () => {
@@ -111,7 +111,7 @@ const Home = () => {
       </div>
       
       {/* Gallery Preview Section */}
-      <GalleryPreview rows={homeGalleryPreviewConfig.preview.rows} />
+      <Gallery rows={homeGalleryPreviewConfig.preview.rows} />
     </div>
   );
 };
