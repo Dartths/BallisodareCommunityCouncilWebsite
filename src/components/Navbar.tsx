@@ -3,7 +3,7 @@ import images from '../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import NavbarSubmenu from './NavbarSubmenu';
-import { home, about, facilities, clubs, activities, news, contact } from '../config/routes';
+import { home, about, facilities, clubs, activities, news, contact, heritage } from '../config/routes';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
   const aboutSubmenuItems = [
     { label: 'About BCC', to: about.index },
     { label: 'Our Facilities', to: facilities.index },
-    { label: 'Heritage and History', to: about.history },
+    { label: 'Heritage and History', to: heritage.index },
     { label: 'Projects', to: about.projects },
   ];
 

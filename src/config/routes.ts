@@ -3,7 +3,6 @@ export const routes = {
   home: '/',
   about: {
     index: '/about',
-    history: '/about/history',
     projects: '/about/projects'
   },
   facilities: {

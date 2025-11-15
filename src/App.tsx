@@ -9,7 +9,8 @@ import Contact from './pages/Contact';
 import ClubsAndOrganisations from './pages/ClubsAndOrganisations';
 import ThingsToDo from './pages/ThingsToDo';
 import LatestNews from './pages/LatestNews';
-import { home, about, facilities, contact, clubs, activities, news, gallery } from './config/routes';
+import HeritageAndHistory from './pages/HeritageAndHistory';
+import { home, about, facilities, contact, clubs, activities, news, gallery, heritage } from './config/routes';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path={activities.index} element={<ThingsToDo />} />
             <Route path={news.index} element={<LatestNews />} />
             <Route path={gallery} element={<Gallery />} />
+            <Route path={heritage.index} element={<HeritageAndHistory />} />
           </Routes>
         </main>
         <Footer />

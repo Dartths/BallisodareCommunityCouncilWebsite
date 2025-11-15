@@ -8,6 +8,7 @@ import { about, facilities, heritage, activities } from '../config/routes';
 import Gallery from '../components/gallery/GalleryPreview';
 import { homeGalleryPreviewConfig } from '../config/homeGalleryPreviewConfig';
 import BookingCTA from '../components/sections/BookingSection';
+import HeritageAndHistory from './HeritageAndHistory';
 
 const Home = () => {
   return (
@@ -93,7 +94,7 @@ const Home = () => {
               <p className="text-lg mb-6 font-body text-gray-700">
                 The town is situated at the mouth of the Ballisodare River  and is one of the most picturesque towns in the Northwest on the Wild  Atlantic Way. Few spots in the county have as varied and interesting a history as Ballisodare with evidence that it was a major gathering place for surrounding districts as early as the second century          </p>
               <div className="text-center">
-                <ReadMoreButton href={about.history} text="Read More" />
+                <ReadMoreButton href={heritage.index} text="Read More" />
               </div>
             </div>
             <div >
