@@ -111,7 +111,7 @@ const Home = () => {
       </div>
       
       {/* Gallery Preview Section */}
-      <Gallery rows={galleryPreviewConfig.preview.rows} />
+      <GalleryPreview rows={homeGalleryPreviewConfig.preview.rows} />
     </div>
   );
 };
