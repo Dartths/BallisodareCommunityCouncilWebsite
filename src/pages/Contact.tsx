@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
+import qrcode from '../assets/images/contact/qrcode.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -118,6 +119,13 @@ const Contact = () => {
               </button>
             </div>
           </form>
+        </div> */}
+
+        <div>
+          <h2 className="text-2xl font-semibold mb-6">Donate here</h2>
+          <img src={qrcode} alt="Donate QR code" className="max-w-xs">
+          </img>
+          <p>Or you can follow this link by clicking <a href='https://pay.sumup.com/b2c/QE563G0O'>here!</a></p>
         </div>
       </div>
     </div>
