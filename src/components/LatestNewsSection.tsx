@@ -1,5 +1,7 @@
 import React from 'react';
 import NewsCard from './cards/NewsCard';
+import testImage from '../assets/images/activities/fisheries-and-waterfalledited.jpg';
+
 
 const newsArticles = [
   {
@@ -9,11 +11,13 @@ const newsArticles = [
   },
   {
     title: "Tidy Towns Clean Up",
+    image: {src: testImage, alt: 'image of fishery'},
     description: "From time to time Ballisodare Tidy Towns will organise a village cleanup...",
     link: "/news/tidy-towns"
   },
   {
     title: "Bulk Item Disposal",
+    image: {src: testImage, alt: 'image of fishery'},
     description: "Information about bulk item disposal at Young's Quarry...",
     link: "/news/bulk-disposal"
   }
@@ -28,6 +32,7 @@ const LatestNewsSection: React.FC = () => {
           <NewsCard 
             key={article.title}
             title={article.title}
+            image={article.image}
             description={article.description}
             link={article.link}
           />
