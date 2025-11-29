@@ -1,3 +1,5 @@
+import Donation from "../components/Donation";
+
 const About = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -44,6 +46,11 @@ const About = () => {
           Whether you have ideas, skills, or simply time to share, there's a place for you
           in the Ballisodare Community Council.
         </p>
+      </section>
+
+      <section>
+
+        <Donation />
       </section>
     </div>
   );
