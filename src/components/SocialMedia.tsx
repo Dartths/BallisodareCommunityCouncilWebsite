@@ -1,6 +1,5 @@
 import React from 'react';
 import Facebook from '../assets/images/socials/facebook.svg';
-import Twitter from '../assets/images/socials/x.svg';
 import Instagram from '../assets/images/socials/instagram.svg';
 
 import { socialUrls } from '../config/socials';

@@ -5,8 +5,6 @@ import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
 import { about, facilities, heritage, activities } from '../config/routes';
-import Gallery from '../components/gallery/GalleryPreview';
-import { homeGalleryPreviewConfig } from '../config/homeGalleryPreviewConfig';
 import BookingCTA from '../components/sections/BookingSection';
 
 const Home = () => {
