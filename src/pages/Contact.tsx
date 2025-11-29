@@ -1,5 +1,4 @@
-
-import Donation from '../components/Donation';
+import SocialMedia from "../components/SocialMedia";
 
 const Contact = () => {
   return (
@@ -11,45 +10,24 @@ const Contact = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
             <div className="space-y-4">
-              <div>
+              {/* <div>
                 <h3 className="text-lg font-medium mb-2">Facility Bookings</h3>
                 <p>Call David Dillon: 086 285 1099</p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Email</h3>
                 <p>hello@ballisodare.ie</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-2">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.facebook.com/ballisodarecommunitycouncil"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    Facebook
-                  </a>
-                  <a
-                    href="https://www.instagram.com/ballisodare_community_council/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    Instagram
-                  </a>
-                </div>
-              </div>
+              </div> */}
             </div>
           </div>
           </div>
 
-<Donation />
       </section>
+      <SocialMedia />
 
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-6">Our Facilities</h2>
-        <div>
+        {/* <div>
           <h3 className="text-lg font-medium mb-2">Facility Bookings</h3>
           <p>Call David Dillon: 086 285 1099</p>
         </div>
@@ -87,7 +65,7 @@ const Contact = () => {
               Day Rate: €250 per day
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
