@@ -7,5 +7,7 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js'
   },
-  base: '/BallisodareCommunityCouncilWebsite/'
-})
+  base: '/',
+  build: {
+    assetsDir: 'assets',
+  }})

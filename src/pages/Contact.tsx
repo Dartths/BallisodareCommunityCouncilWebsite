@@ -42,6 +42,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          </div>
 
 <Donation />
       </section>
