@@ -1,5 +1,5 @@
 export const socialUrls = {
-  facebook: 'https://www.facebook.com/your-page',
-  twitter: 'https://twitter.com/your-handle',
-  instagram: 'https://www.instagram.com/your-profile',
+  facebook: 'https://www.facebook.com/ballisodarecommunitycouncil/',
+  twitter: 'https://x.com/BallisodareCC',
+  instagram: 'https://www.instagram.com/ballisodare_community_council',
 };

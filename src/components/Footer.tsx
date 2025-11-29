@@ -1,4 +1,6 @@
 import { routes } from '../config/routes';
+import { socialUrls } from '../config/socials';
+import { contactDetails } from '../config/contactDetails';
 
 const Footer = () => {
   return (
@@ -11,8 +13,8 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="font-sans flex items-start">
                 <span className="mr-2">📞</span>
-                <a href="tel:+353871914368" className="hover:text-accent transition-colors">
-                  +353 (0)71 9143686
+                <a href={`tel:${contactDetails.phoneNumber}`} className="hover:text-accent transition-colors">
+                  {contactDetails.phoneNumber}
                 </a>
               </p>
               <p className="font-sans flex items-start">
@@ -53,7 +55,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 font-title">social:</h3>
             <div className="flex space-x-4 mb-6">
               <a 
-                href="https://www.facebook.com/ballisodarecommunitycouncil" 
+                href={socialUrls.facebook} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-white/20 hover:bg-accent transition-colors flex items-center justify-center"
@@ -62,7 +64,7 @@ const Footer = () => {
                 f
               </a>
               <a 
-                href="https://www.instagram.com/ballisodare_community_council/" 
+                href={socialUrls.instagram}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-white/20 hover:bg-accent transition-colors flex items-center justify-center"

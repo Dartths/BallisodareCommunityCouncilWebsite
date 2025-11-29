@@ -23,7 +23,7 @@ const SocialMedia: React.FC = () => {
           <span className="text-sm font-sans text-secondary">Facebook</span>
         </a>
 
-        <a
+        {/* <a
           href={socialUrls.twitter}
           target="_blank"
           rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const SocialMedia: React.FC = () => {
         >
           <img src={Twitter} alt="Twitter" className="h-8 w-8" />
           <span className="text-sm font-sans text-secondary">Twitter</span>
-        </a>
+        </a> */}
 
         <a
           href={socialUrls.instagram}
