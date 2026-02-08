@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import About from './pages/About/About';
 import Facilities from './pages/Facilities';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import ClubsAndOrganisations from './pages/ClubsAndOrganisations';
 import ThingsToDo from './pages/Activities';
 import LatestNews from './pages/News';

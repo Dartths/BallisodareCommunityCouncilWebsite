@@ -8,8 +8,9 @@ const ClubsAndOrganisations = () => {
         <ImageTextSection {...MensShedContent} imageLeft={false} />
         <ImageTextSection {...WomensShedContent} />
         <ImageTextSection {...ScoutsContent} imageLeft={false}/>
-        <ImageTextSection {...TidyTownsContent}/>
-        <ImageTextSection {...FishingClubContent} imageLeft={false}/>
+        <ImageTextSection {...TidyTownsContent}imageLeft={false}/>
+        <ImageTextSection {...FishingClubContent} />
+        {/* <ImageTextSection {...ScoutsContent} imageLeft={false}/> */}
     </div>
   );
 };

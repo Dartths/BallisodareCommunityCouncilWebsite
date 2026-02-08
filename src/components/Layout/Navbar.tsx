@@ -3,7 +3,7 @@ import images from '../../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import NavbarSubmenu from './NavbarSubmenu';
-import { home, about, facilities, clubs, activities, news, contact, heritage } from '../../config/routes';
+import { home, about, facilities, clubs, activities, contact, heritage } from '../../config/routes';
 import HamburgerIcon from '../UI/HamburgerIcon';
 import CloseIcon from '../UI/CloseIcon';
 
@@ -22,7 +22,7 @@ const Navbar = () => {
     { name: 'About', to: about.index, type: 'submenu' as const, items: aboutSubmenuItems },
     { name: 'Clubs and Organisations', to: clubs, type: 'link' as const },
     { name: 'Things to Do', to: activities.index, type: 'link' as const },
-    { name: 'Latest News', to: news.index, type: 'link' as const },
+    // { name: 'Latest News', to: news.index, type: 'link' as const },
     { name: 'Contact Us', to: contact, type: 'link' as const },
   ];
 
