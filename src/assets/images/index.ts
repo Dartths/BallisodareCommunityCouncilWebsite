@@ -16,7 +16,7 @@ import mensShed from '../images/clubs/mensshed.jpg';
 import womensShed from '../images/clubs/womensShed.jpg';
 import scouts from '../images/clubs/scouts.png';
 import tidyTowns from '../images/clubs/TidyTowns.jpg';
-import fishingClub from '../images/clubs/fishingClub.avif';
+import fishingClub from '../images/clubs/fishingclub.avif';
 
 
 export const images = {
