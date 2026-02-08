@@ -1,6 +1,6 @@
-import { routes } from '../config/routes';
-import { socialUrls } from '../config/socials';
-import { contactDetails } from '../config/contactDetails';
+import { routes } from '../../config/routes';
+import { socialUrls } from '../../config/constants/socials';
+import { contactDetails } from '../../config/constants/contactDetails';
 
 const Footer = () => {
   return (

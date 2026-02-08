@@ -1,8 +1,8 @@
 import React from 'react';
-import Facebook from '../assets/images/socials/facebook.svg';
-import Instagram from '../assets/images/socials/instagram.svg';
+import Facebook from '../../assets/images/socials/facebook.svg';
+import Instagram from '../../assets/images/socials/instagram.svg';
 
-import { socialUrls } from '../config/socials';
+import { socialUrls } from '../../config/constants/socials';
 
 const SocialMedia: React.FC = () => {
   return (

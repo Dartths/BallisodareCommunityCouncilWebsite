@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import images from '../assets/images';
+import images from '../../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import NavbarSubmenu from './NavbarSubmenu';
-import { home, about, facilities, clubs, activities, news, contact, heritage, gallery } from '../config/routes';
+import { home, about, facilities, clubs, activities, news, contact, heritage, gallery } from '../../config/routes';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +40,9 @@ const Navbar = () => {
               <Link to={news.index} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Latest News
               </Link>
-              <Link to={gallery} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
+              {/* <Link to={gallery} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Gallery
-              </Link>
+              </Link> */}
               <Link to={contact} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Contact Us
               </Link>

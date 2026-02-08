@@ -1,5 +1,5 @@
-import qrcode from '../assets/images/contact/qrcode.png';
-import ReadMoreButton from './buttons/ReadMoreButton';
+import qrcode from '../../assets/images/contact/qrcode.png';
+import ReadMoreButton from '../buttons/ReadMoreButton';
 
 const Donation: React.FC = () => {
   return (
