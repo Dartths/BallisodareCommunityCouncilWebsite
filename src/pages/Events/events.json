@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Community Meeting",
+    "description": "Monthly community council meeting",
+    "fullDescription": "Join us for our monthly community council meeting where we discuss ongoing projects, address community concerns, and plan upcoming events. All community members are welcome to attend and participate.",
+    "date": "2024-03-15",
+    "time": "19:00",
+    "recurrence": "monthly",
+    "image": "/images/community-meeting.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Tidy Towns Cleanup",
+    "description": "Weekly village cleanup event",
+    "fullDescription": "Help keep Ballisodare beautiful! Join our weekly cleanup where volunteers gather to maintain our streets, parks, and public spaces. All equipment provided. Families welcome.",
+    "date": "2024-03-09",
+    "time": "10:00",
+    "recurrence": "weekly",
+    "image": "/images/cleanup.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Heritage Walk",
+    "description": "Guided tour of historical sites",
+    "fullDescription": "Explore Ballisodare's rich history with a guided walking tour. Visit St. Féichín's Temple, the Viking settlement site, and learn about our salmon fishing heritage. Suitable for all ages.",
+    "date": "2024-03-22",
+    "time": "14:00",
+    "recurrence": "none",
+    "image": "/images/heritage-walk.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Men's Shed Workshop",
+    "description": "Open workshop session",
+    "fullDescription": "Join us at the Men's Shed for our regular workshop session. Work on community projects, learn new skills, or just enjoy good company. Open to all ages and genders.",
+    "date": "2024-03-12",
+    "time": "14:00",
+    "recurrence": "weekly",
+    "image": "/images/mens-shed.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Youth Sports Camp",
+    "description": "Summer sports activities for children",
+    "fullDescription": "Week-long sports camp at the Community Sports and Amenity Area. Soccer, rugby, and various games for ages 6-14. Professional coaching and all equipment provided. Registration required.",
+    "date": "2024-07-08",
+    "time": "09:00",
+    "recurrence": "none",
+    "image": "/images/sports-camp.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Falls Festival",
+    "description": "Annual Ballisodare Falls Festival",
+    "fullDescription": "Our biggest event of the year! Celebrate local culture, music, and community spirit at the annual Falls Festival. Food stalls, live music, family activities, historical displays, and more. Free entry for all.",
+    "date": "2024-08-15",
+    "time": "12:00",
+    "recurrence": "yearly",
+    "image": "/images/falls-festival.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Coffee Morning",
+    "description": "Social gathering at the community center",
+    "fullDescription": "Join your neighbors for a friendly coffee morning. A relaxed social gathering where you can meet new people, catch up with friends, and enjoy refreshments. All ages welcome.",
+    "date": "2024-03-20",
+    "time": "10:30",
+    "recurrence": "none",
+    "image": "/images/coffee-morning.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Environmental Workshop",
+    "description": "Learn about local conservation efforts",
+    "fullDescription": "Educational workshop covering local environmental initiatives, biodiversity, and how you can contribute to conservation efforts in the Ballisodare area. Guest speakers and hands-on activities.",
+    "date": "2026-02-12",
+    "time": "15:00",
+    "recurrence": "none",
+    "image": "/images/environment-workshop.jpg"
+  }
+]

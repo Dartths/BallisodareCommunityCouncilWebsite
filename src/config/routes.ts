@@ -28,7 +28,12 @@ export const routes = {
   },
   contact: '/contact',
   clubs: '/clubs-and-organisations',
-  gallery: '/gallery'
+  gallery: '/gallery',
+  events: {
+    index: '/events',
+    // calendar: '/events/calendar',
+    // submit: '/events/submit'
+  }
 } as const;
 
 // Helper function to ensure type safety when accessing routes
@@ -48,5 +53,6 @@ export const {
   news,
   contact,
   clubs,
-  gallery
+  gallery,
+  events
 } = routes;
