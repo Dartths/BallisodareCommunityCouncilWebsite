@@ -6,6 +6,8 @@ import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
 import { about, facilities, heritage, activities } from '../config/routes';
 import BookingCTA from '../components/sections/BookingSection';
+import ImageTextSection from '../components/sections/ImageTextSection';
+import { facilitiesContent } from '../components/sections/imageTextDefaults';
 
 const Home = () => {
   return (
@@ -45,34 +47,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Facilities Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 font-title text-primary">Community Centre Facilities</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={images.facilities.communityCentre}
-                alt="Ballisodare Community Centre"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div>
-              <p className="text-lg mb-4 font-body text-gray-700">
-                The Ballisodare Community, Sports and Amenity Area was fully completed and opened in September 2020.
-              </p>
-              <p className="text-lg mb-4 font-body text-gray-700">
-                The modern bright facility incorporates 156 square metres of hall space, a canteen area and ample storage and parking.
-              </p>
-              <p className="text-lg mb-6 font-body text-gray-700">
-                The two full size community pitches, a large community pitch and a full size GAA pitch are suitable for soccer,
-                rugby and many other activities and are complimented by spacious, clean, male and female changing and hot shower areas.
-              </p>
-              <div>
-                <ReadMoreButton href={facilities.index} />
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImageTextSection {...facilitiesContent} />
 
         {/* Booking CTA */}
         <BookingCTA />
