@@ -1,7 +1,7 @@
 
-import { type ImageTextSectionProps} from '../../components/sections/imageTextDefaults';
-import images from '../../assets/images';
-import { facilities } from '../routes';
+import { type ImageTextSectionProps} from '../components/sections/imageTextDefaults';
+import images from '../assets/images';
+import { facilities } from '../config/routes';
 
 export const imageTextContent = {
   facilities: {

@@ -5,5 +5,7 @@ export type ImageTextSectionProps = {
   paragraphs?: readonly string[];
   href?: string | null;
   className?: string;
+  /** Position the image on the left when true (default). When false image will be on the right. */
+  imageLeft?: boolean;
 };
 

@@ -3,15 +3,16 @@ import React from 'react';
 interface HeroProps {
   title?: string;
   subtitle?: string;
+  alt?: string;
   image: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
+const Hero: React.FC<HeroProps> = ({ title, subtitle, alt, image }) => {
   return (
     <section className="relative h-[400px]">
       <img 
         src={image} 
-        alt="Hero image" 
+        alt={alt} 
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white">
