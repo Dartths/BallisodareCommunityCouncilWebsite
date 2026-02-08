@@ -33,7 +33,7 @@ const ThingsToDo = () => {
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Men's Shed</h3>
               <p className="text-gray-700 mb-4 font-body">Our shed is a community-based organisation that is open to all , where the primary activity is the provision of a safe, friendly, and inclusive environment, where members are able to gather and /or work together on meaningful projects in the company of others, where the primary objective is to advance the health and well being of the participants.</p>
-              <ReadMoreButton href={activities.mensShed} />
+              <ReadMoreButton href={'https://www.sligoleader.ie/ballisodare-mens-shed/'} />
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
