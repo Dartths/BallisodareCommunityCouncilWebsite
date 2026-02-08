@@ -33,15 +33,15 @@ const ThingsToDo = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Men's Shed</h3>
-              <p className="text-gray-700 mb-4 font-body">Our shed is a community-based organisation that is open to all , where the primary activity is the provision of a safe, friendly, and inclusive environment, where members are able to gather and /or work together on meaningful projects in the company of others, where the primary objective is to advance the health and well being of the participants.</p>
-              <ReadMoreButton href={'https://www.sligoleader.ie/ballisodare-mens-shed/'} />
+              <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Ballisodare Abbey</h3>
+              <p className="text-gray-700 mb-4 font-body">Wakeman painted this on 23 October 1878. The Abbey is located close to the shoreline of Ballysadare Bay within the grounds of an active limestone quarry and concrete works. Today it is surrounded by and largely submerged in quarry debris. The only visible remains are parts of the north wall of the nave (13.6m long) and chancel (6m long) of the church, with the lower part of the tower between them. The tower rises from two substantial walls with two pointed arches of dressed stone linking the nave to the chancel. It measures 6.35m north to south by 3.7m east to west and reaches about 6m above present ground level. The chancel arch is depicted in Wakeman's painting.</p>
+              <ReadMoreButton href={'https://www.askaboutireland.ie/reading-room/environment-geography/physical-landscape/the-wakeman-drawings/ballysadare/'} />
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3 font-title text-secondary">Union Woods</h3>
-              <p className="text-gray-600 mb-4">The walk through Union Wood is approximately 5 kilometers in one direction and joins Ballisodare and Collooney via union Wood. It is a beautiful Woodland walk some of the walk...</p>
+              <p className="text-gray-600 mb-4">Union wood is a large area of mixed forestry located between Coolooney, Ballygawley and Ballisodare and provides a wonderful amenity for Sligo. The wood provides a range of walking opportunities through diverse woodland as well as access to Union Rock and its wonderful panorama of the North West of Ireland. There are two waymarked looped walks within Union wood in addition to the Sligo Way long distance waymarked route.</p>
               <ReadMoreButton href={'https://sligowalks.ie/walks/union-wood/'} />
             </div>
           </div>

@@ -11,6 +11,12 @@ import fishery2 from '../images/heritage/Fishery2Falls-Sun-Philip-OBrien-1280x96
 import viking from '../images/heritage/viking.jpeg';
 import sligoCommunityHeritage from '../images/heritage/SligoCommunityHeritage.svg';
 import qrcode from '../images/contact/qrcode.png';
+import ardVoltas from '../images/clubs/ardvoltas.jpg';
+import mensShed from '../images/clubs/mensshed.jpg';
+import womensShed from '../images/clubs/womensShed.jpg';
+import scouts from '../images/clubs/scouts.png';
+import tidyTowns from '../images/clubs/TidyTowns.jpg';
+import fishingClub from '../images/clubs/fishingClub.avif';
 
 
 export const images = {
@@ -35,6 +41,14 @@ export const images = {
   },
   contact:{
     qrcode
+  },
+  clubs: {
+    ardVoltas,
+    mensShed,
+    womensShed,
+    scouts,
+    tidyTowns,
+    fishingClub
   }
 } as const;
 
