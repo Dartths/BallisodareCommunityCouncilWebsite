@@ -1,15 +1,15 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/Layout/Navbar';
+import Footer from './components/Layout/Footer';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Facilities from './pages/Facilities';
 import Contact from './pages/Contact';
 import ClubsAndOrganisations from './pages/ClubsAndOrganisations';
-import ThingsToDo from './pages/ThingsToDo';
-import LatestNews from './pages/LatestNews';
-import HeritageAndHistory from './pages/HeritageAndHistory';
+import ThingsToDo from './pages/Activities';
+import LatestNews from './pages/News';
+import HeritageAndHistory from './pages/Heritage';
 import { home, about, facilities, contact, clubs, activities, news, gallery, heritage } from './config/routes';
 
 function App() {

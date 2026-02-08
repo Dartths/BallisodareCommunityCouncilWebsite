@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import images from '../assets/images';
+import images from '../../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import NavbarSubmenu from './NavbarSubmenu';
-import { home, about, facilities, clubs, activities, news, contact, heritage, gallery } from '../config/routes';
+import NavbarSubmenu from '../NavbarSubmenu';
+import { home, about, facilities, clubs, activities, news, contact, heritage, gallery } from '../../config/routes';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -2,7 +2,7 @@ import PhotoAlbum from 'react-photo-album';
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { gallery } from '../../config/routes';
-import type { PreviewRow } from '../../config/homeGalleryPreviewConfig';
+import type { PreviewRow } from '../../config/gallery/homeGalleryPreviewConfig';
 
 interface GalleryProps {
   title?: string;

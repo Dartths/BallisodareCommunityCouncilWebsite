@@ -1,4 +1,4 @@
-import SocialMedia from "../components/SocialMedia";
+import SocialMedia from "../components/Common/SocialMedia";
 
 const Contact = () => {
   return (

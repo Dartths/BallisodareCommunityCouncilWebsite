@@ -6,9 +6,9 @@ import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
 
-import { homeGalleryPreviewConfig } from '../config/homeGalleryPreviewConfig';
-import { gallery } from '../config/routes';
-import type { PreviewRow } from '../config/homeGalleryPreviewConfig';
+import { homeGalleryPreviewConfig } from '../../config/gallery/homeGalleryPreviewConfig';
+import { gallery } from '../../config/routes';
+import type { PreviewRow } from '../../config/gallery/homeGalleryPreviewConfig';
 
 const Gallery: React.FC = () => {
   const [index, setIndex] = useState<number | undefined>(undefined);

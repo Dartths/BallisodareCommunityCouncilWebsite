@@ -1,12 +1,12 @@
-import ReadMoreButton from '../components/buttons/ReadMoreButton';
-import Hero from '../components/banners/Hero';
-import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
-import LatestNewsSection from '../components/LatestNewsSection';
-import SocialMedia from '../components/SocialMedia';
-import { about, heritage, activities } from '../config/routes';
-import BookingCTA from '../components/sections/BookingSection';
-import ImageTextSection from '../components/sections/ImageTextSection';
-import { facilitiesContent } from '../config/Facilities';
+import ReadMoreButton from '../../components/buttons/ReadMoreButton';
+import Hero from '../../components/banners/Hero';
+import ballisodareAerial from '../../assets/images/hero/ballisodare-aerial.jpg';
+import LatestNewsSection from '../../components/LatestNewsSection';
+import SocialMedia from '../../components/Common/SocialMedia';
+import { about, heritage, activities } from '../../config/routes';
+import BookingCTA from '../../components/sections/BookingSection';
+import ImageTextSection from '../../components/sections/ImageTextSection';
+import { facilitiesContent } from '../../config/content/Facilities';
 
 const Home = () => {
   return (

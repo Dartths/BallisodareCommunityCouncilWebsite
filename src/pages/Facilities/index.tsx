@@ -1,6 +1,6 @@
 
-import images from '../assets/images';
-import BookingCTA from '../components/sections/BookingSection';
+import images from '../../assets/images';
+import BookingCTA from '../../components/sections/BookingSection';
 
 const Facilities = () => {
   return (

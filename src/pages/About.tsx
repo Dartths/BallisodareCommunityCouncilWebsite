@@ -1,4 +1,4 @@
-import Donation from "../components/Donation";
+import Donation from "../components/Common/Donation";
 
 const About = () => {
   return (
