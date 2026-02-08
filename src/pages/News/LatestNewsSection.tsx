@@ -1,6 +1,6 @@
 import React from 'react';
 import NewsCard from '../../components/cards/NewsCard';
-import SimpleFacebookEmbed from '../../components/Common/SimpleFacebookEmbed';
+import FacebookEmbed from '../../components/Common/FacebookEmbed';
 
 export type NewsArticle = NewsCardArticle | FacebookEmbedArticle;
 
@@ -56,7 +56,7 @@ const LatestNewsSection: React.FC = () => {
           if (article.kind === 'facebook') {
             return (
               <div key={article.title} className="col-span-1">
-                <SimpleFacebookEmbed iframeHtml={article.iframeHtml} src={article.src} />
+                <FacebookEmbed iframeHtml={article.iframeHtml} src={article.src} />
               </div>
             );
           }

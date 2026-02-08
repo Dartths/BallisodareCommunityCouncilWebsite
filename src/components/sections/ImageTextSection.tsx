@@ -16,25 +16,45 @@ const ImageTextSection: React.FC<ImageTextSectionProps> = ({
   paragraphs,
   href,
   className,
+  imageLeft = true,
 }) => {
   return (
     <ContentSection title={title} className={className + ' mb-16'}>
       <div className="grid md:grid-cols-2 gap-8">
-        <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-          <img src={imageSrc} alt={imageAlt} className="object-cover w-full h-full" />
-        </div>
-        <div>
-          {(paragraphs ?? []).map((p, i) => (
-            <p key={i} className="text-lg mb-4 font-body text-gray-700">
-              {p}
-            </p>
-          ))}
-          {href && href.trim() !== '' && (
-            <div>
-              <ReadMoreButton href={href} />
+        {(() => {
+          const imageElement = (
+            <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+              <img src={imageSrc} alt={imageAlt} className="object-cover w-full h-full" />
             </div>
-          )}
-        </div>
+          );
+
+          const textElement = (
+            <div>
+              {(paragraphs ?? []).map((p, i) => (
+                <p key={i} className="text-lg mb-4 font-body text-gray-700">
+                  {p}
+                </p>
+              ))}
+              {href && href.trim() !== '' && (
+                <div>
+                  <ReadMoreButton href={href} />
+                </div>
+              )}
+            </div>
+          );
+
+          return imageLeft ? (
+            <>
+              {imageElement}
+              {textElement}
+            </>
+          ) : (
+            <>
+              {textElement}
+              {imageElement}
+            </>
+          );
+        })()}
       </div>
     </ContentSection>
   );
