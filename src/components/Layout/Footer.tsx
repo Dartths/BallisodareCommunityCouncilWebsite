@@ -20,7 +20,7 @@ const Footer = () => {
               <p className="font-sans flex items-start">
                 <span className="mr-2">✉️</span>
                 <a href="mailto:hello@ballisodare.ie" className="hover:text-accent transition-colors">
-                  message us
+                  message uss
                 </a>
               </p>
             </div>

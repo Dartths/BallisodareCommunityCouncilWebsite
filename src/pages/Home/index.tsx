@@ -6,7 +6,7 @@ import SocialMedia from '../../components/Common/SocialMedia';
 import { about, heritage, activities } from '../../config/routes';
 import BookingCTA from '../../components/sections/BookingSection';
 import ImageTextSection from '../../components/sections/ImageTextSection';
-import { facilitiesContent } from '../../config/content/Facilities';
+import { facilitiesContent } from '../../content/Facilities';
 
 const Home = () => {
   return (

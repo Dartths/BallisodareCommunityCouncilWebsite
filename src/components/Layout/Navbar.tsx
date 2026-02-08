@@ -3,11 +3,11 @@ import images from '../../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import NavbarSubmenu from './NavbarSubmenu';
-import { home, about, facilities, clubs, activities, news, contact, heritage } from '../../config/routes';
+import { home, about, facilities, clubs, activities, news, contact, heritage, gallery } from '../../config/routes';
+import NavbarSubmenuMobile from './NavbarSubmenuMobile';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isAboutMenuOpen, setAboutMenuOpen] = useState(false);
 
   const aboutSubmenuItems = [
     { label: 'About BCC', to: about.index },
@@ -30,7 +30,7 @@ const Navbar = () => {
               <Link to={home} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Home
               </Link>
-              <NavbarSubmenu name="About" items={aboutSubmenuItems} />
+              <NavbarSubmenu name="About" to={about.index} items={aboutSubmenuItems} />
               <Link to={clubs} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors">
                 Clubs and Organisations
               </Link>
@@ -113,33 +113,11 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <div className="relative">
-              <button onClick={() => setAboutMenuOpen(!isAboutMenuOpen)} className="text-white hover:bg-secondary block w-full text-left px-3 py-2 rounded-md text-base font-medium font-title">
-                About
-              </button>
-              <Transition
-                show={isAboutMenuOpen}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <div className="pl-4">
-                  {aboutSubmenuItems.map((item) => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      onClick={() => setIsOpen(false)}
-                      className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium font-title"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </Transition>
-            </div>
+            <NavbarSubmenuMobile
+              name="About"
+              items={aboutSubmenuItems}
+              onLinkClick={() => setIsOpen(false)}
+            />
             <Link
               to={clubs}
               onClick={() => setIsOpen(false)}

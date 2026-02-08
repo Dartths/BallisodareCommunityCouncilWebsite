@@ -9,6 +9,7 @@ import ballisodareFallsHeritage from '../images/heritage/Ballisodare-Falls-Jane-
 import fishery1 from '../images/heritage/Fisher11280x705.jpg';
 import fishery2 from '../images/heritage/Fishery2Falls-Sun-Philip-OBrien-1280x960.jpg';
 import viking from '../images/heritage/viking.jpeg';
+import sligoCommunityHeritage from '../images/heritage/SligoCommunityHeritage.svg';
 import qrcode from '../images/contact/qrcode.png';
 
 
@@ -30,6 +31,7 @@ export const images = {
     fishery1,
     fishery2,
     viking,
+    sligoCommunityHeritage
   },
   contact:{
     qrcode

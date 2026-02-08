@@ -10,16 +10,17 @@ interface SubmenuItem {
 interface NavbarSubmenuProps {
   name: string;
   items: SubmenuItem[];
+  to: string;
 }
 
-const NavbarSubmenu = ({ name, items }: NavbarSubmenuProps) => {
+const NavbarSubmenu = ({ name, to, items }: NavbarSubmenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="relative" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
-      <button className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors focus:outline-none">
+      <Link to={to} className="px-3 py-2 rounded-md text-sm font-medium font-title hover:bg-secondary transition-colors focus:outline-none">
         {name}
-      </button>
+      </Link>
       <Transition
         show={isOpen}
         enter="transition ease-out duration-100"
