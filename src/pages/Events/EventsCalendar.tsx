@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { ChevronLeft, ChevronRight, Calendar, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight,  X } from 'lucide-react';
 
 /**
  * Event interface defining the structure of calendar events
