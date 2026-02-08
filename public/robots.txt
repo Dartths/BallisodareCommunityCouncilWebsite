@@ -1,0 +1,13 @@
+# robots.txt for ballisodare.ie
+
+User-agent: *
+Allow: /
+
+# Block access to common admin/private areas (if applicable)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+
+# Sitemap location (add this when you create one)
+Sitemap: https://ballisodare.ie/sitemap.xml
