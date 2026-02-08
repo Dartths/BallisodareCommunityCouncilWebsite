@@ -10,9 +10,10 @@ import ClubsAndOrganisations from './pages/ClubsAndOrganisations';
 import ThingsToDo from './pages/Activities';
 import LatestNews from './pages/News';
 import HeritageAndHistory from './pages/Heritage';
-import { home, about, facilities, contact, clubs, activities, news, gallery, heritage } from './config/routes';
+import { home, about, facilities, contact, clubs, activities, news, gallery, heritage,events } from './config/routes';
 import Projects from './pages/About/Projects';
 import ScrollToTop from './components/Common/ScrollToTop';
+import EventsPage from './pages/Events/EventsPage';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path={news.index} element={<LatestNews />} />
             <Route path={gallery} element={<Gallery />} />
             <Route path={heritage.index} element={<HeritageAndHistory />} />
+            <Route path={events.index} element={<EventsPage />} />
           </Routes>
         </main>
         <Footer />
