@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
             background: white;
             aspect-ratio: 16/9;
             border-radius: 8px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
             display: none;
             flex-direction: column;
             position: relative;
@@ -88,7 +89,8 @@
             font-weight: 600;
         }
 
-        p, li {
+        p,
+        li {
             color: #1F2937;
             font-size: 22px;
             line-height: 1.6;
@@ -208,14 +210,27 @@
             .slide-content {
                 padding: 40px 40px;
             }
-            
-            h1 { font-size: 36px; }
-            h2 { font-size: 28px; }
-            h3 { font-size: 22px; }
-            p, li { font-size: 16px; }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="presentation-container">
         <!-- Slide 1: Intro -->
@@ -241,7 +256,7 @@
                     <li>Passed through multiple hands over time</li>
                     <li>Eventually went offline due to lack of dedicated ownership</li>
                 </ul>
-                
+
                 <h3 style="margin-top: 40px;">The Technical Challenge</h3>
                 <ul style="margin-left: 30px;">
                     <li><span class="accent-text">Old site:</span> WordPress with numerous plugins</li>
@@ -263,7 +278,9 @@
                 <div class="demo-box">
                     <h2>Let's See It In Action!</h2>
                     <p style="font-size: 28px; color: #1F2937;">Time for a live demonstration of the new website</p>
-                    <p style="margin-top: 30px;"><a href="https://ballisodare.ie/" target="_blank" style="color: #F59E0B; font-size: 32px; font-weight: 600; text-decoration: none; border-bottom: 3px solid #F59E0B;">ballisodare.ie →</a></p>
+                    <p style="margin-top: 30px;"><a href="https://ballisodare.ie/" target="_blank"
+                            style="color: #F59E0B; font-size: 32px; font-weight: 600; text-decoration: none; border-bottom: 3px solid #F59E0B;">ballisodare.ie
+                            →</a></p>
                 </div>
             </div>
             <div class="slide-footer">
@@ -277,14 +294,15 @@
             <div class="slide-header">Ballisodare Community Council</div>
             <div class="slide-content">
                 <h2>Get In Touch</h2>
-                
+
                 <div class="contact-box">
                     <h3>Content Updates & Bug Reports</h3>
                     <p>Have content to add or found an issue?</p>
                     <p style="margin-top: 20px;">Contact: <span class="contact-email">philipcandon@live.com</span></p>
                 </div>
-                
-                <p style="margin-top: 30px; font-size: 20px;">We welcome your contributions and feedback to help make our community website even better!</p>
+
+                <p style="margin-top: 30px; font-size: 20px;">We welcome your contributions and feedback to help make
+                    our community website even better!</p>
             </div>
             <div class="slide-footer">
                 <span>Ballisodare Community Council</span>
@@ -298,14 +316,19 @@
             <div class="slide-content">
                 <h2>What's Next?</h2>
                 <p style="margin-bottom: 30px;">Exciting features coming soon:</p>
-                
+
                 <ul style="margin-left: 30px;">
+                    <li><span class="accent-text">Accessibility</span> - Support for screen readers and other assistive
+                        technologies</li>
                     <li><span class="accent-text">Photo Gallery</span> - Showcase community events and moments</li>
                     <li><span class="accent-text">Event Calendar</span> - Stay up to date with upcoming activities</li>
-                    <li><span class="accent-text">Social Media Feeds</span> - Live updates from BCC and associate organizations</li>
+                    <li><span class="accent-text">Social Media Feeds</span> - Live updates from BCC and associated
+                        groups</li>
+                    <li><span class="accent-text">Dark Mode</span> - Switch between light and dark themes</li>
                 </ul>
-                
-                <p style="margin-top: 50px; font-size: 28px; text-align: center; color: #F59E0B; font-weight: 600;">Thank You!</p>
+
+                <p style="margin-top: 50px; font-size: 28px; text-align: center; color: #F59E0B; font-weight: 600;">
+                    Thank You!</p>
             </div>
             <div class="slide-footer">
                 <span>Ballisodare Community Council</span>
@@ -327,12 +350,12 @@
 
         function showSlide(n) {
             slides.forEach(slide => slide.classList.remove('active'));
-            
+
             if (n >= totalSlides) currentSlide = totalSlides - 1;
             if (n < 0) currentSlide = 0;
-            
+
             slides[currentSlide].classList.add('active');
-            
+
             document.getElementById('prevBtn').disabled = currentSlide === 0;
             document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
         }
@@ -352,4 +375,5 @@
         showSlide(0);
     </script>
 </body>
+
 </html>
