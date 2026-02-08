@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useRef, useState, useEffect } from 'react';
 
 export type FacebookEmbedProps = {
   /** Either provide the iframe `src` URL or the full iframe HTML via `iframeHtml`. */
@@ -13,6 +13,8 @@ export type FacebookEmbedProps = {
   iframeClassName?: string;
   /** Width / Height aspect ratio (e.g. 16/9 -> 1.777...). If provided, overrides parsed values. */
   aspectRatio?: number;
+  /** Optional maximum height for the embed (px or number). Will clamp computed height. */
+  maxHeight?: number | string;
   style?: React.CSSProperties;
   loading?: 'lazy' | 'eager';
   allowFullScreen?: boolean;
@@ -28,6 +30,7 @@ const FacebookEmbed: React.FC<FacebookEmbedProps> = ({
   aspectRatio,
   wrapperClassName,
   iframeClassName,
+  maxHeight,
   style,
   loading = 'lazy',
   allowFullScreen = true,
@@ -54,7 +57,6 @@ const FacebookEmbed: React.FC<FacebookEmbedProps> = ({
   const derivedAspectRatio = useMemo(() => {
     if (typeof aspectRatio === 'number' && aspectRatio > 0) return aspectRatio;
 
-    // try parse from iframeHtml
     if (iframeHtml) {
       const wMatch = iframeHtml.match(/width=["']?(\d+)["']?/i);
       const hMatch = iframeHtml.match(/height=["']?(\d+)["']?/i);
@@ -65,7 +67,6 @@ const FacebookEmbed: React.FC<FacebookEmbedProps> = ({
       }
     }
 
-    // try from numeric height/width props
     const numericWidth = typeof width === 'number' ? width : undefined;
     const numericHeight = typeof height === 'number' ? height : undefined;
     if (numericWidth && numericHeight) return numericWidth / numericHeight;
@@ -73,44 +74,55 @@ const FacebookEmbed: React.FC<FacebookEmbedProps> = ({
     return 16 / 9;
   }, [aspectRatio, iframeHtml, width, height]);
 
-  const paddingTopPercent = 100 / (derivedAspectRatio ?? (16 / 9));
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [computedHeightPx, setComputedHeightPx] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const el = containerRef.current;
+    if (!el) return;
+
+    const compute = () => {
+      const w = el.clientWidth || el.getBoundingClientRect().width;
+      if (!w) return;
+      const ratio = derivedAspectRatio || 16 / 9;
+      let h = w / ratio;
+
+      if (typeof maxHeight !== 'undefined') {
+        const maxH = typeof maxHeight === 'number' ? maxHeight : Number(String(maxHeight).replace('px', ''));
+        if (!Number.isNaN(maxH) && maxH > 0) h = Math.min(h, maxH);
+      }
+
+      setComputedHeightPx(Math.round(h));
+    };
+
+    compute();
+    const ro = new ResizeObserver(compute);
+    ro.observe(el);
+    window.addEventListener('orientationchange', compute);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('orientationchange', compute);
+    };
+  }, [derivedAspectRatio, maxHeight]);
 
   const cardClasses = 'bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden';
 
-  const heightValue = typeof height === 'number' ? `${height}px` : height;
-
   return (
     <div className={`${cardClasses} ${wrapperClassName ?? ''}`} style={style}>
-      <div className="p-0">
-        <div className="w-full overflow-hidden rounded-t-md">
-          <div style={{ position: 'relative', width: '100%', paddingTop: `${paddingTopPercent}%` }}>
-            {iframeHtml ? (
-              // parse src and render our own responsive iframe to avoid whitespace from fixed heights
-              <iframe
-                src={finalSrc}
-                title={title}
-                className={`absolute top-0 left-0 w-full h-full ${iframeClassName ?? ''}`}
-                style={{ border: 'none' }}
-                loading={loading}
-                scrolling="no"
-                allowFullScreen={Boolean(allowFullScreen)}
-                sandbox={sandbox}
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            ) : (
-              <iframe
-                src={finalSrc}
-                title={title}
-                className={`absolute top-0 left-0 w-full h-full ${iframeClassName ?? ''}`}
-                style={{ border: 'none' }}
-                loading={loading}
-                scrolling="no"
-                allowFullScreen={Boolean(allowFullScreen)}
-                sandbox={sandbox}
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            )}
-          </div>
+      <div ref={containerRef} className="p-0 m-0">
+        <div className="w-full overflow-hidden">
+          <iframe
+            src={finalSrc}
+            title={title}
+            className={`w-full block ${iframeClassName ?? ''}`}
+            style={{ border: 'none', height: computedHeightPx ? `${computedHeightPx}px` : undefined }}
+            loading={loading}
+            scrolling="no"
+            allowFullScreen={Boolean(allowFullScreen)}
+            sandbox={sandbox}
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </div>
