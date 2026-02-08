@@ -1,13 +1,12 @@
 import ReadMoreButton from '../components/buttons/ReadMoreButton';
-import images from '../assets/images';
 import Hero from '../components/banners/Hero';
 import ballisodareAerial from '../assets/images/hero/ballisodare-aerial.jpg';
 import LatestNewsSection from '../components/LatestNewsSection';
 import SocialMedia from '../components/SocialMedia';
-import { about, facilities, heritage, activities } from '../config/routes';
+import { about, heritage, activities } from '../config/routes';
 import BookingCTA from '../components/sections/BookingSection';
 import ImageTextSection from '../components/sections/ImageTextSection';
-import { facilitiesContent } from '../components/sections/imageTextDefaults';
+import { facilitiesContent } from '../config/Facilities';
 
 const Home = () => {
   return (

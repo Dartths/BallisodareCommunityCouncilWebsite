@@ -2,7 +2,7 @@
 import React from 'react';
 import ReadMoreButton from '../buttons/ReadMoreButton';
 import ContentSection from './ContentSection';
-import { imageTextContent, type ImageTextSectionProps} from './imageTextDefaults';
+import { type ImageTextSectionProps} from './imageTextDefaults';
 
 
 /**
@@ -10,12 +10,12 @@ import { imageTextContent, type ImageTextSectionProps} from './imageTextDefaults
  * A focused two-column section with an image on the left and text + CTA on the right.
  */
 const ImageTextSection: React.FC<ImageTextSectionProps> = ({
-  imageSrc = imageTextContent.facilities.imageSrc,
-  imageAlt = imageTextContent.facilities.imageAlt,
-  title = imageTextContent.facilities.title,
-  paragraphs = imageTextContent.facilities.paragraphs,
-  href = imageTextContent.facilities.href,
-  className = imageTextContent.facilities.className,
+  imageSrc,
+  imageAlt,
+  title,
+  paragraphs,
+  href,
+  className,
 }) => {
   return (
     <ContentSection title={title} className={className + ' mb-16'}>
