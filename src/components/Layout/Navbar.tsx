@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import images from '../../assets/images';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import NavbarSubmenu from '../NavbarSubmenu';
+import NavbarSubmenu from './NavbarSubmenu';
 import { home, about, facilities, clubs, activities, news, contact, heritage, gallery } from '../../config/routes';
 
 const Navbar = () => {

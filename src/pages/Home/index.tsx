@@ -1,7 +1,7 @@
 import ReadMoreButton from '../../components/buttons/ReadMoreButton';
 import Hero from '../../components/banners/Hero';
 import ballisodareAerial from '../../assets/images/hero/ballisodare-aerial.jpg';
-import LatestNewsSection from '../../components/LatestNewsSection';
+import LatestNewsSection from '../News/LatestNewsSection';
 import SocialMedia from '../../components/Common/SocialMedia';
 import { about, heritage, activities } from '../../config/routes';
 import BookingCTA from '../../components/sections/BookingSection';
