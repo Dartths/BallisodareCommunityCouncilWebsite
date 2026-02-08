@@ -14,7 +14,7 @@ const Navbar = () => {
     { label: 'About BCC', to: about.index },
     { label: 'Our Facilities', to: facilities.index },
     { label: 'Heritage and History', to: heritage.index },
-    { label: 'Projects', to: about.projects },
+    // { label: 'Projects', to: about.projects },
   ];
 
   const navItems = [
