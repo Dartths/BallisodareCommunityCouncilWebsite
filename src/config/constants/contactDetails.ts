@@ -1,5 +1,5 @@
 export const contactDetails = {
   name: 'David Dillon',
-  phoneNumber: '111-222-3333',
+  phoneNumber: '086 285 1099',
   email: 'hello@ballisodare.com',
 };
